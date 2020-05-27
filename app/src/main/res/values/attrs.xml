@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GeneralButton">
+        <attr name="color" />
+        <attr name="style">
+            <enum name="primary" value="0" />
+            <enum name="secondary" value="1" />
+            <enum name="linked" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="ConfirmationInput">
+        <attr name="inputColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HelperText">
+        <attr name="info" format="reference|string" />
+        <attr name="error" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="InputField">
+        <attr name="android:inputType" />
+        <attr name="titleText" format="string" />
+        <attr name="hintInput" format="string" />
+        <attr name="imageInput" format="reference" />
+        <attr name="mHelperText" format="reference|string" />
+        <attr name="imageHelper" format="reference" />
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageLabel">
+        <attr name="srcImage" format="reference" />
+        <attr name="textValue" format="string" />
+        <attr name="textValueColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="InputFieldCustom">
+        <attr name="inputText" format="string" />
+        <attr name="inputTextColor" format="color" />
+        <attr name="inputTextSize" format="dimension" />
+        <attr name="inputDrawableLeft" format="reference" />
+        <attr name="inputDrawableRight" format="reference" />
+        <attr name="inputStyle" format="reference" />
+        <attr name="helpText" format="string" />
+        <attr name="helpTextColor" format="color" />
+        <attr name="helpTextSize" format="dimension" />
+        <attr name="helpDrawableLeft" format="reference" />
+        <attr name="helpDrawableRight" format="reference" />
+        <attr name="helpStyle" format="reference" />
+        <attr name="backgroundNormal" format="reference" />
+        <attr name="backgroundFull" format="reference" />
+        <attr name="backgroundError" format="reference" />
+        <attr name="errorStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="OnboardingMenu">
+        <attr name="onboarding_text_title" format="string"/>
+        <attr name="onboarding_text_subtitle" format="string"/>
+        <attr name="onboarding_icon" format="reference"/>
+        <attr name="status">
+            <enum name="enabled" value="0" />
+            <enum name="disabled" value="1" />
+            <enum name="succesed" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

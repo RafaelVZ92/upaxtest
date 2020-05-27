@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="disabled">#d9d9d9</color>
+    <color name="hover">#005bd6</color>
+    <color name="stroke_disabled">#c4c4c4</color>
+
+    <color name="very_light_pink">#efefef</color>
+    <color name="very_light_pink_two">#f2f2f2</color>
+    <color name="pale_grey">#f4f6f9</color>
+    <color name="white">#f8f8f8</color>
+    <color name="black">#000000</color>
+    <color name="white_two">#ffffff</color>
+    <color name="shamrock">#00ae42</color>
+    <color name="grape_purple">#701d45</color>
+    <color name="indigo">#4f008c</color>
+    <color name="leather">#ba9b31</color>
+    <color name="olive">#BF9C03</color>
+    <color name="barney">#c228b9</color>
+    <color name="bright_blue">#006dff</color>
+    <color name="bright_blue_transparency">#CB006dff</color>
+    <color name="bright_blue_background">#DEEBFF</color>
+    <color name="slime_green">#96d500</color>
+    <color name="blood_orange">#ff5100</color>
+    <color name="dark_hot_pink">#d60056</color>
+    <color name="dark_hot_pink_transparency">#0DD60056</color>
+    <color name="dark_hot_red">#e90054</color>
+    <color name="dark_hot_red_transparency">#16E90054</color>
+    <color name="hot_pink">#ed018c</color>
+    <color name="orange_yellow">#ffa400</color>
+    <color name="sunflower_yellow">#ffdb00</color>
+    <color name="very_light_pink_three">#bebebe</color>
+    <color name="black_two">#212121</color>
+    <color name="brownish_grey">#757575</color>
+    <color name="swipe_gray">#ececec</color>
+    <color name="disable_gray">#e0e0e0</color>
+    <color name="brownish_grey_transparent">#4d757575</color>
+    <color name="colorWhiteTransparent">#80FFFFFF</color>
+    <color name="checkbox_disable">#e0e0e0</color>
+    <color name="bright_blue32">#51006dff</color>
+    <color name="transparent">#00000000</color>
+    <color name="input_field_custom_color">#DEEBFF</color>
+    <color name="blueBlue">#2837cd</color>
+    <color name="investment_blue_modality">#E2F2FF</color>
+    <color name="investment_blue_modality_accent">#006DFF</color>
+    <color name="color_view_underlying">#33979797</color>
+    <color name="investment_detail_text">#575757</color>
+    <color name="view_underlying_investment_statement_component">#80E0E0E0</color>
+    <color name="white_opacity">#1AFFFFFF</color>
+</resources>
