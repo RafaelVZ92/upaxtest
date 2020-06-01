@@ -7,6 +7,7 @@
     <color name="disabled">#d9d9d9</color>
     <color name="hover">#005bd6</color>
     <color name="stroke_disabled">#c4c4c4</color>
+    <color name="withe_transparency">#CBffffff</color>
 
     <color name="very_light_pink">#efefef</color>
     <color name="very_light_pink_two">#f2f2f2</color>

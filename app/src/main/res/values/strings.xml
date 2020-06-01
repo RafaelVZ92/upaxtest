@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">UpaxTestApp</string>
     <string name="title_activity_maps">Map</string>
+    <string name="upax_path">task/initial_load</string>
 </resources>

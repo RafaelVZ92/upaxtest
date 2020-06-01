@@ -1,4 +1,4 @@
-package com.example.upaxtestapp.components
+package com.example.upaxtestapp.common.components
 
 import android.content.Context
 import android.content.res.ColorStateList

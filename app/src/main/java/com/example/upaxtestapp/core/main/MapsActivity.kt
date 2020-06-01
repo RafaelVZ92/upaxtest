@@ -1,7 +1,14 @@
-package com.example.upaxtestapp
+package com.example.upaxtestapp.core.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import com.example.upaxtestapp.R
+import com.example.upaxtestapp.api.Resource
+import com.example.upaxtestapp.api.Status
+import com.example.upaxtestapp.common.utils.Utils
+import com.example.upaxtestapp.core.base.BaseActivity
+import com.example.upaxtestapp.core.main.viewmodel.UpaxViewModel
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -11,7 +18,23 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_maps.*
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+class MapsActivity : BaseActivity(), OnMapReadyCallback {
+
+    private val mViewModel: UpaxViewModel by lazy {
+        ViewModelProvider(this).get(UpaxViewModel::class.java)
+    }
+
+    private val mPathObserver = Observer<Resource<String>> {
+        when (it.status) {
+            Status.SUCCESS -> {
+                hideProgressLoader()
+            }
+            Status.ERROR -> {
+                hideProgressLoader()
+            }
+            Status.LOADING -> showProgressLoader()
+        }
+    }
 
     private lateinit var mMap: GoogleMap
 
@@ -22,19 +45,24 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = supportFragmentManager
                 .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+        retrieveResponseServices()
         btn_button.setOnClickListener {
-            v -> //markInfo()
+            v -> markInfo()
         }
     }
 
+    private fun retrieveResponseServices() {
+        mViewModel.mPath.observe(this, mPathObserver)
+    }
+
     private fun markInfo() {
-   /*     val size = txt_data.text.toString().toInt()
+      val size = txt_data.editText.text.toString().toInt()
         repeat((1..size).count()) {
             val lat = Utils.getLatLog()
             val lon = Utils.getLatLog()
             val randomMarker = LatLng(lat, lon)
             mMap.addMarker(MarkerOptions().position(randomMarker).title("Random Marker"))
-        }*/
+        }
 
     }
 

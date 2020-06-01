@@ -1,4 +1,4 @@
-package com.example.upaxtestapp.components
+package com.example.upaxtestapp.common.components
 
 import android.os.SystemClock
 import android.view.View

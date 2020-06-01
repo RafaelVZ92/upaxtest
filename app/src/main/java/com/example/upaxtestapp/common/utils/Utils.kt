@@ -1,4 +1,4 @@
-package com.example.upaxtestapp
+package com.example.upaxtestapp.common.utils
 
 import kotlin.random.Random
 

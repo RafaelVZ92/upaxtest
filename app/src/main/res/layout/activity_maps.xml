@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity" >
+    tools:context=".core.main.MapsActivity" >
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map"
@@ -21,8 +21,8 @@
         map:layout_constraintTop_toTopOf="parent"
         map:layout_constraintVertical_bias="1.0" />
 
-    <com.example.upaxtestapp.components.InputFieldCustom
-        android:id="@+id/et_pwd"
+    <com.example.upaxtestapp.common.components.InputFieldCustom
+        android:id="@+id/txt_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Hola"
